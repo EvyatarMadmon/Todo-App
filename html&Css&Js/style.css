@@ -1,0 +1,90 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    height: 100vh;
+    width: 70vh;
+    background-color: tomato;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 120px;
+}
+
+.title {
+    font-weight: bold;
+    position: relative;
+    padding-left: 20px;
+    color: black;
+    top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputText {
+    width: 35vh;
+    height: 5vh;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    border-color: blue;
+    border-radius: 55px;
+    cursor: pointer;
+}
+
+
+.button {
+    height: 5vh;
+    width: 18vh;
+    border-radius: 20px;
+    font-size: larger;
+    color: whitesmoke;
+    background-color: orange;
+
+}
+
+ul li {
+    font-size: 20px;
+    padding: 12px 8px 12px 20px;
+    user-select: none;
+    cursor: move;
+    position: relative;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: #edeef9;
+}
+
+.draggable {
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 5;
+}
+
+.checked {
+    color: #555;
+    text-decoration: line-through;
+}
